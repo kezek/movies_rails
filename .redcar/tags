@@ -1,8 +1,0 @@
-1359996452
-Application	/home/andrei/www/movies_rails/config/application.rb	  class Application 
-ApplicationController	/home/andrei/www/movies_rails/app/controllers/application_controller.rb	class ApplicationController 
-ApplicationHelper	/home/andrei/www/movies_rails/app/helpers/application_helper.rb	module ApplicationHelper
-BrowsingTest	/home/andrei/www/movies_rails/test/performance/browsing_test.rb	class BrowsingTest 
-MoviesRails	/home/andrei/www/movies_rails/config/application.rb	module MoviesRails
-TestCase	/home/andrei/www/movies_rails/test/test_helper.rb	class ActiveSupport::TestCase
-test_homepage	/home/andrei/www/movies_rails/test/performance/browsing_test.rb	  def test_homepage
