@@ -10,7 +10,7 @@ gem 'sqlite3', '1.3.7', :group => :development
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails', '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -40,3 +40,13 @@ gem 'jquery-rails'
 gem 'execjs'
 
 gem 'therubyracer'
+
+# testing related gems
+group :development do
+  gem 'rspec-rails', '2.12.2'
+end
+
+group :test do
+  gem 'rspec', '2.12.0'
+  gem 'webrat', '0.7.1'
+end
