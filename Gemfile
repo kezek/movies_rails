@@ -41,6 +41,9 @@ gem 'execjs'
 
 gem 'therubyracer'
 
+# @see https://github.com/aarongough/ruby-tmdb#readme
+gem 'ruby-tmdb'
+
 # testing related gems
 group :development do
   gem 'rspec-rails', '2.12.2'
