@@ -1,5 +1,9 @@
 class StaticPagesController < ApplicationController
   def home
-    #abort('HOMEPAGE')
+
+  end
+
+  def contact
+
   end
 end
