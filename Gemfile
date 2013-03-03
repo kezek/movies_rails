@@ -44,6 +44,7 @@ gem 'therubyracer'
 # testing related gems
 group :development do
   gem 'rspec-rails', '2.12.2'
+  gem 'better_errors'
 end
 
 group :test do
