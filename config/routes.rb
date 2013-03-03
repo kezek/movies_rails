@@ -1,10 +1,11 @@
 MoviesRails::Application.routes.draw do
-
-  #root :to => 'static_pages#home'
-  #match 'static_pages/home' => 'home'
+  # homepage
+  root :to => 'static_pages#home'
   get "static_pages/home"
+
+  # contact
+  match 'contact' => 'static_pages#contact'
   get "static_pages/contact"
-  #get "static_pages/contact"  => 'contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
