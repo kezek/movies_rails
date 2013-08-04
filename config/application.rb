@@ -16,7 +16,7 @@ module MoviesRails
     # -- all .rb files in that directory are automatically loaded.
 
     # Custom directories with classes and modules you want to be autoloadable.
-    config.autoload_paths += %W(#{Rails.root}/app/core)
+    config.autoload_paths += %W(#{Rails.root}/app/core.rb)
     #config.autoload_paths +=  Rails.root.join('app', 'app.rb')
 
     # Only load the plugins named here, in the order given (default is alphabetical).
