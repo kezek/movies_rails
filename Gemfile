@@ -46,8 +46,6 @@ gem 'ruby-tmdb'
 
 gem 'nokogiri'
 
-gem 'rails-backbone'
-
 # testing related gems
 group :development do
   gem 'rspec-rails', '2.12.2'
