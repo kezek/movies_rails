@@ -1,4 +1,7 @@
 MoviesRails::Application.routes.draw do
+  resources :users
+
+
   # homepage
   root :to => 'static_pages#home'
   get "static_pages/home"
@@ -6,6 +9,10 @@ MoviesRails::Application.routes.draw do
   # contact
   match 'contact' => 'static_pages#contact'
   get "static_pages/contact"
+
+  namespace :api do
+    resources :users, :defaults => { :format => 'json' }
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
