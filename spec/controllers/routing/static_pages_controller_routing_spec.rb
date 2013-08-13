@@ -1,4 +1,4 @@
-require 'spec_helper'
+  require 'spec_helper'
 
 describe StaticPagesController do
   describe "GET 'home' action from 'StaticPagesController'" do
