@@ -50,6 +50,7 @@ gem 'nokogiri'
 group :development do
   gem 'rspec-rails', '2.12.2'
   gem 'better_errors'
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :test do
