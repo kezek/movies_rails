@@ -3,7 +3,7 @@ require 'spec_helper'
 
 describe Api::UsersController do
   describe "GET #index" do
-    it "should return an a JSON and be successful" do
+    it 'should return an a JSON and be successful' do
       get :index
       response.headers['Content-Type'].should include 'application/json'
       response.should be_success
@@ -11,8 +11,15 @@ describe Api::UsersController do
     it 'should return one entry' do
       FactoryGirl.create(:user)
       get :index
-      puts ActiveSupport::JSON.decode(response.body).length.should == 1
+      ActiveSupport::JSON.decode(response.body).length.should == 1
     end
+  end
 
+  describe "POST #create" do
+    it 'should respond with proper JSON' do
+      attrs = FactoryGirl.attributes_for(:user)
+      post :create , attrs , :format => :json
+      JSON.parse(response.body)['email'].should == attrs[:email]
+    end
   end
 end
