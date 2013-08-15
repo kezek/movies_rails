@@ -48,15 +48,15 @@ gem 'nokogiri'
 
 # testing related gems
 group :development do
-  gem 'rspec-rails', '2.12.2'
+  gem 'rspec-rails', '~> 2.12'
   gem 'better_errors'
-  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :test do
-  gem 'rspec', '2.12.0'
+  gem 'rspec-rails', '~> 2.12'
   gem 'webrat', '0.7.1'
   gem "factory_girl_rails", "~> 4.0"
+  gem 'shoulda-matchers'
 end
 # Heroku uses postgres to connect to the database (not sqlite), so add a production group including postgres gem
 # @see http://stackoverflow.com/questions/12292046/rails-app-crashing-in-heroku
