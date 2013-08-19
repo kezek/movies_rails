@@ -23,12 +23,26 @@ describe Api::UsersController do
     end
   end
 
-  describe "POST #update" do
+  describe "PUT #update" do
     it 'should respond with proper JSON' do
       user = FactoryGirl.create(:user)
       attrs = {:id => user.id, :email => 'asdad',:password =>'212231231'}
       put :update , attrs , :format => :json
       JSON.parse(response.body)['email'].should == attrs[:email]
+    end
+  end
+
+  describe "DELETE #destory" do
+    it 'should respond with proper JSON' do
+      user = FactoryGirl.create(:user)
+      delete :destroy , {:id => user.id}
+      JSON.parse(response.body)['id'].should == user.id
+    end
+
+    it 'should delete the record' do
+      user = FactoryGirl.create(:user)
+      delete :destroy , {:id => user.id}
+      expect {User.find(user.id)}.to raise_error ActiveRecord::RecordNotFound
     end
   end
 end
