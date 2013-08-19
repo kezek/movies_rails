@@ -1,16 +1,30 @@
 class Api::UsersController < ApplicationController
+
+  #GET /api/users
   def index
     render json: User.all
   end
 
+  #GET /api/users/:id
   def show
     render json: User.find(params[:id])
   end
 
+  #POST   /api/users(.:format)
   def create
     @user = User.new
-    @user.id = params[:id]
+    @user.password = params[:password]
     @user.email = params[:email]
+    @user.save
+
+    render json:@user
+  end
+
+  #PUT /api/users/:id(.:format)
+  def update
+    @user = User.find(params[:id])
+    @user.email = params[:email]
+    @user.password = params[:password]
     @user.save
 
     render json:@user

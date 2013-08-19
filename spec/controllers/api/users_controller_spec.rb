@@ -22,4 +22,13 @@ describe Api::UsersController do
       JSON.parse(response.body)['email'].should == attrs[:email]
     end
   end
+
+  describe "POST #update" do
+    it 'should respond with proper JSON' do
+      user = FactoryGirl.create(:user)
+      attrs = {:id => user.id, :email => 'asdad',:password =>'212231231'}
+      put :update , attrs , :format => :json
+      JSON.parse(response.body)['email'].should == attrs[:email]
+    end
+  end
 end
