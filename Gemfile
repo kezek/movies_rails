@@ -45,6 +45,7 @@ gem 'therubyracer'
 gem 'ruby-tmdb'
 
 gem 'nokogiri'
+gem 'doorkeeper', '~> 0.7.2'
 
 # testing related gems
 group :development do
