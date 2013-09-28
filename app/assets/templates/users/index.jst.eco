@@ -1,0 +1,13 @@
+<form class="form-horizontal login-form">
+  <div class="form-group">
+    <label for="name">Username:</label>
+    <input type="text" id="name" name="name"/>
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"/>
+  </div>
+  <div class="form-group">
+    <input type="submit"/>
+  </div>
+</form>
