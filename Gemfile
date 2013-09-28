@@ -45,6 +45,7 @@ gem 'therubyracer'
 gem 'ruby-tmdb'
 
 gem 'nokogiri'
+gem 'backbone-on-rails'
 
 # testing related gems
 group :development do
