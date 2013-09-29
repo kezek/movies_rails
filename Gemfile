@@ -46,6 +46,7 @@ gem 'ruby-tmdb'
 
 gem 'nokogiri'
 gem 'backbone-on-rails'
+gem 'doorkeeper', '~> 0.7.2'
 
 # testing related gems
 group :development do

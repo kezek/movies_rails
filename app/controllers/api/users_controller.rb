@@ -1,5 +1,7 @@
 class Api::UsersController < ApplicationController
 
+  doorkeeper_for :all
+
   #GET /api/users
   def index
     render json: User.all
