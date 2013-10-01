@@ -38,7 +38,8 @@ gem 'jquery-rails'
 
 # fix: Could not find a JavaScript runtime
 gem 'execjs'
-
+# fix : no such file to load -- eco
+gem 'eco'
 gem 'therubyracer'
 
 # @see https://github.com/aarongough/ruby-tmdb#readme
