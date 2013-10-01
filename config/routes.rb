@@ -17,7 +17,7 @@ MoviesRails::Application.routes.draw do
   end
 
   #session controller
-  match 'session/login'
+  match 'login' => 'session#login'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
