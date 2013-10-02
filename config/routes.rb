@@ -16,6 +16,10 @@ MoviesRails::Application.routes.draw do
     resources :users, :defaults => { :format => 'json' }
   end
 
+  #session controller
+  match 'login' => 'session#login'
+  match 'postLogin' => 'session#postLogin'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
