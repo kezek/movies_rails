@@ -1,3 +1,6 @@
+<% flash.each do |key, value| %>
+  <%= content_tag(:div, value, :class => "flash #{key}") %>
+<% end %>
 <form class="form-horizontal login-form" method="post" action="postLogin">
   <div class="form-group">
     <label for="name">Email:</label>
